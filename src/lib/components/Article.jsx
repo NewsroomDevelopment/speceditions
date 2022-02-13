@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import { ThemeProvider } from "styled-components"
 
 
 const ArticleWrap = styled.div`
@@ -67,7 +66,6 @@ const Author = styled.p`
 const NormalArticle = ({ article }) => {
   console.log(article);
   return (
-    <ThemeProvider theme={theme}>
     <ArticleWrap>
       <Link href={article.link} target="_blank" rel="noreferrer">
         <ArticleImg src={article.img} />
@@ -77,7 +75,6 @@ const NormalArticle = ({ article }) => {
         </ArticleText>
       </Link>
     </ArticleWrap>
-    </ThemeProvider>
   );
 };
 

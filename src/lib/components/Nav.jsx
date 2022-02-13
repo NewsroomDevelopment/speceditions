@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import { ThemeProvider } from "styled-components"
 
 
 
@@ -30,7 +29,6 @@ const NavText = styled.div`
 
 const Nav = ({sections}) => {
   return (
-    <ThemeProvider>
         <NavSection>
         <NavText>
             {Object.keys(sections).map((section) => (
@@ -38,7 +36,6 @@ const Nav = ({sections}) => {
             ))}
         </NavText>
         </NavSection>
-    </ThemeProvider>
   );
 };
 

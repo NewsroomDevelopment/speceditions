@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import { ThemeProvider } from "styled-components"
 
 
 const AdBlock = styled.div`
@@ -14,8 +13,6 @@ const AdBlock = styled.div`
 `;
 const Ad = ({ img }) => {
   console.log(img);
-  return <ThemeProvider theme={theme}>
-              <AdBlock img={img}  />;
-        </ThemeProvider>;
+  return <AdBlock img={img}  />;
 };
 export default Ad;

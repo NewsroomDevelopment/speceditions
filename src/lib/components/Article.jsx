@@ -63,7 +63,7 @@ const Author = styled.p`
   margin: 8px 0px;
 `;
 
-const NormalArticle = ({ article }) => {
+const Article = ({ article, size, authorPosition}) => {
   console.log(article);
   return (
     <ArticleWrap>
@@ -78,4 +78,4 @@ const NormalArticle = ({ article }) => {
   );
 };
 
-export default NormalArticle;
+export default Article;

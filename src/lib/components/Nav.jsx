@@ -16,18 +16,18 @@ const NavSection = styled.div`
 `;
 
 const SectionNav = styled.div`
-  position: relative;
-  font-size: 1.75em;
-  line-height: 1.85em;
-  color: white;
-  font-weight: bold;
+  position: ${props => 'position' in props.styling ? props.styling['position'] : "relative"};
+  font-size:  ${props => 'font-size' in props.styling ? props.styling['font-size'] : "1.75em"};
+  line-height:  ${props => 'line-height' in props.styling ? props.styling['line-height'] : "1.85em"};
+  color: ${props => 'color' in props.styling ? props.styling['color'] : "white"};
+  font-weight: ${props => 'bold' in props.styling ? props.styling['bold'] : "bold"};
 `;
 
 const NavText = styled.div`
   margin-top: 25%;
 `;
 
-const Nav = ({sections}) => {
+const Nav = ({sections, styling}) => {
   return (
         <NavSection>
         <NavText>

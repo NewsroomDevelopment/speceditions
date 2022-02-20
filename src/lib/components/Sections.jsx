@@ -11,39 +11,34 @@ import Credits from "./Credits";
 import WritingData from "../utils/WritingData";
 import VisualData from "../utils/VisualData";
 const Columns = styled.div`
-  display: flex;
+  display: ${props => 'display' in props.styling ? props.styling['display'] : "flex"};
 `;
 const NavColumn = styled.div`
-  width: 25%;
+  width: ${props => 'width' in props.styling ? props.styling['width'] : "25%"};
 `;
 
 const ArticleColumn = styled.div`
-  width: 75%;
-  padding-right: 5%;
+  width: ${props => 'width' in props.styling ? props.styling['width'] : "75%"};
+  padding-right: ${props => 'padding-right' in props.styling ? props.styling['padding-right'] : "5%"};
 `;
 const Title = styled.div`
-  text-align: center;
-  padding: 2%;
-  font-size: 5rem;
-  text-transform:uppercase;
-  background-image: linear-gradient(
-    89.88deg,
-    #000748 35.17%,
-    #204352 66.32%,
-    #12909e 91.06%
-  );
+  text-align: ${props => 'text-align' in props.styling ? props.styling['text-align'] : "center"};
+  padding: ${props => 'padding' in props.styling ? props.styling['padding'] : "2%"};
+  font-size: ${props => 'font-size' in props.styling ? props.styling['font-size'] : "5rem"};
+  text-transform: ${props => 'text-transform' in props.styling ? props.styling['text-transform'] : "uppercase"};
+  background-image: linear-gradient(89.88deg, #000748 35.17%, #204352 66.32%, #12909e 91.06%);${props => 'background-image' in props.styling ? props.styling['background-image'] : "linear-gradient(89.88deg, #000748 35.17%, #204352 66.32%, #12909e 91.06%)"};
 
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
+  background-size: ${props => 'background-size' in props.styling ? props.styling['background-size'] : "100%"};
+  -webkit-background-clip: ${props => '-webkit-background-clip' in props.styling ? props.styling['-webkit-background-clip'] : "text"};
+  -moz-background-clip: ${props => '-moz-background-clip' in props.styling ? props.styling['-moz-background-clip'] : "text"};
+  -webkit-text-fill-color: ${props => '-webkit-text-fill-color' in props.styling ? props.styling['-webkit-text-fill-color'] : "transparent"};
+  -moz-text-fill-color: ${props => '-moz-text-fill-color' in props.styling ? props.styling['-moz-text-fill-color'] : "transparent"};
 
-  font-family: Bitter;
-  font-style: normal;
-  font-weight: bold;
+  font-family: ${props => 'font-family' in props.styling ? props.styling['font-family'] : "Bitter"};
+  font-style: ${props => 'font-style' in props.styling ? props.styling['font-style'] : "normal"};
+  font-weight: ${props => 'font-weight' in props.styling ? props.styling['font-weight'] : "bold"};
 
-  text-shadow: 5px 5px 4px rgba(27, 192, 211, 0.5);
+  text-shadow: ${props => 'text-shadow' in props.styling ? props.styling['text-shadow'] : "5px 5px 4px rgba(27, 192, 211, 0.5)"};
 `;
 
 const Sections = () => {

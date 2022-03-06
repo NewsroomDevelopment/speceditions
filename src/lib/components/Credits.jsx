@@ -3,7 +3,7 @@ import styled from "styled-components";
 import CreditsImg from "../images/credits.png";
 
 const CreditsSection = styled.div`
-  background-image: url(${CreditsImg});
+  background-image: url(${props.CreditsImg});
   height: 100vh;
   width: 100%;
   background-size: cover;
@@ -19,7 +19,7 @@ const CreditsTitle = styled.div`
   font-size:5rem;
 `;
 
-const Credits = () => {
+const Credits = ({CreditsImg, styling}) => {
   return (
     <CreditsSection>
       <CreditsTitle>credits</CreditsTitle>

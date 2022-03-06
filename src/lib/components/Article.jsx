@@ -62,7 +62,7 @@ const Author = styled.p`
   margin: ${props => 'margin' in props.styling ? props.styling['margin'] : "8px 0px"};
 `;
 
-const Article = ({ article, size, authorPosition }) => {
+const Article = ({ article, styling }) => {
   console.log(article);
   return (
     <ArticleWrap>

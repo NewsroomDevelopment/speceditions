@@ -8,8 +8,6 @@ import WritingSection from "./WritingSection";
 import VisualSection from "./VisualSection";
 import Credits from "./Credits";
 
-import WritingData from "../utils/WritingData";
-import VisualData from "../utils/VisualData";
 const Columns = styled.div`
   display: ${props => 'display' in props.styling ? props.styling['display'] : "flex"};
 `;
@@ -41,7 +39,7 @@ const Title = styled.div`
   text-shadow: ${props => 'text-shadow' in props.styling ? props.styling['text-shadow'] : "5px 5px 4px rgba(27, 192, 211, 0.5)"};
 `;
 
-const Sections = () => {
+const Sections = ({WritingData, VisualData, styling}) => {
   console.log(WritingData["Photo"]);
   return (
     <>

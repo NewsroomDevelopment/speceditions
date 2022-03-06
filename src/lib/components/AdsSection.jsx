@@ -9,7 +9,7 @@ const AdBlock = styled.div`
   padding-bottom:${props => 'padding-bottom' in props.styling ? props.styling['padding-bottom'] : "10%"};
 `;
 
-const AdsSection = ({images, AdSectionStyling,}) => {
+const AdsSection = ({images, styling}) => {
   return (
     <>
       <AdBlock>

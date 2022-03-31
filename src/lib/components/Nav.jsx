@@ -2,27 +2,27 @@ import React from "react";
 import styled from "styled-components";
 
 const NavSection = styled.div`
-  background-size: ${props => 'background-size' in props.styling ? props.styling['background-size'] : "contain"};
-  margin-top:${props => 'margin-top' in props.styling ? props.styling['margin-top'] : "20%"};
-  background-repeat: ${props => 'background-repeat' in props.styling ? props.styling['background-repeat'] : "no-repeat"};
-  overflow: ${props => 'overflow' in props.styling ? props.styling['overflow'] : "hidden"};
-  background-position: ${props => 'background-position' in props.styling ? props.styling['background-position'] : "left"};
-  width: ${ props => 'width' in props.styling ? props.styling['width'] : "100%" };
-  height: ${ props => 'height' in props.styling ? props.styling['height'] : "40vw" };
-  position: ${ props => 'position' in props.styling ? props.styling['position'] : "sticky" };
-  top: ${ props => 'tops' in props.styling ? props.styling['tops'] : "0" };
+  background-size: ${props => 'background-size' in props.styling['NavSection'] ? props.styling['background-size']['NavSection'] : "contain"};
+  margin-top:${props => 'margin-top' in props.styling['NavSection'] ? props.styling['margin-top']['NavSection'] : "20%"};
+  background-repeat: ${props => 'background-repeat' in props.styling ['NavSection']? props.styling['background-repeat']['NavSection'] : "no-repeat"};
+  overflow: ${props => 'overflow' in props.styling['NavSection'] ? props.styling['overflow']['NavSection'] : "hidden"};
+  background-position: ${props => 'background-position' in props.styling['NavSection'] ? props.styling['background-position']['NavSection'] : "left"};
+  width: ${ props => 'width' in props.styling['NavSection'] ? props.styling['width']['NavSection'] : "100%" };
+  height: ${ props => 'height' in props.styling['NavSection'] ? props.styling['height']['NavSection'] : "40vw" };
+  position: ${ props => 'position' in props.styling['NavSection'] ? props.styling['position']['NavSection'] : "sticky" };
+  top: ${ props => 'tops' in props.styling['NavSection'] ? props.styling['tops']['NavSection'] : "0" };
 `;
 
 const SectionNav = styled.div`
-  position: ${props => 'position' in props.styling ? props.styling['position'] : "relative"};
-  font-size:  ${props => 'font-size' in props.styling ? props.styling['font-size'] : "1.75em"};
-  line-height:  ${props => 'line-height' in props.styling ? props.styling['line-height'] : "1.85em"};
-  color: ${props => 'color' in props.styling ? props.styling['color'] : "white"};
-  font-weight: ${props => 'bold' in props.styling ? props.styling['bold'] : "bold"};
+  position: ${props => 'position' in props.styling['SectionNav'] ? props.styling['position']['SectionNav'] : "relative"};
+  font-size:  ${props => 'font-size' in props.styling['SectionNav'] ? props.styling['font-size']['SectionNav'] : "1.75em"};
+  line-height:  ${props => 'line-height' in props.styling['SectionNav'] ? props.styling['line-height']['SectionNav'] : "1.85em"};
+  color: ${props => 'color' in props.styling['SectionNav'] ? props.styling['color']['SectionNav'] : "white"};
+  font-weight: ${props => 'bold' in props.styling['SectionNav'] ? props.styling['bold']['SectionNav'] : "bold"};
 `;
 
 const NavText = styled.div`
-  margin-top: ${props => 'margin-top' in props.styling ? props.styling['margin-top'] : "25%"};
+  margin-top: ${props => 'margin-top' in props.styling['NavText'] ? props.styling['margin-top']['NavText'] : "25%"};
 `;
 
 const Nav = ({ sections, styling }) => {
